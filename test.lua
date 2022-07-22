@@ -29,8 +29,8 @@ library.theme = {
     backgroundcolor = Color3.fromRGB(20, 20, 20),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
-    accentcolor = Color3.fromRGB(61,31, 114),
-    accentcolor2 = Color3.fromRGB(16, 31, 78),
+    accentcolor = Color3.fromRGB(19, 20, 22),
+    accentcolor2 = Color3.fromRGB(19, 20, 22),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -3436,6 +3436,8 @@ function library:CreateWindow(name, size, hidebutton)
                                 config[i] = v
                             end
                         end
+                        circle  = false
+                        circle = true
                     end
     
                     writefile(configSystem.configFolder .. "/" .. ConfigName:Get() .. ".txt", httpservice:JSONEncode(config))
